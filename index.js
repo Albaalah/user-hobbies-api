@@ -8,7 +8,7 @@ const userRouter = require('./routes/users');
 app.use(cors());
 app.use('/', indexRouter);
 app.use('/users', userRouter);
-app.use('/hobbies/:id', hobbiesRouter);
+app.use('/hobbies', hobbiesRouter);
 
 app.listen(3001, function () {
     console.log('Example app listening on port 3001!')

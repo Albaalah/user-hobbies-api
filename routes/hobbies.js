@@ -19,10 +19,14 @@ const static_response = [{
     "year": "2000"
 }];
 
-router.get('/', function (req, res, next) {
+router.get('/:id', function (req, res, next) {
     res.send({
         "hobbies": _.shuffle(static_response) // randomize hobbies to simulate a changing response against each user
     });
+});
+
+router.post('/', function (req, res, next) {
+    res.send("New hobby detail added successfully");
 });
 
 module.exports = router;

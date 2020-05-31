@@ -20,8 +20,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-    res.send("API is working properly");
-    res.end('It worked!');
+    res.send("User added successfully");
 });
 
 module.exports = router;
